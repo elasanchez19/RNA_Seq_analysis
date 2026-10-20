@@ -1,0 +1,13 @@
+sample_id,srr,sl_number,sex,condition,side,counts_file,group
+GSM7575028,SRR25182296,41,female,sham,ipsi,GSM7575028_SL_41_SHAM_F.readcounts.csv.gz,F_SHAM
+GSM7575034,SRR25182290,47,female,sham,ipsi,GSM7575034_SL_47_SHAM_F.readcounts.csv.gz,F_SHAM
+GSM7575040,SRR25182284,53,female,sham,ipsi,GSM7575040_SL_53_SHAM_F.readcounts.csv.gz,F_SHAM
+GSM7575030,SRR25182294,43,female,sni,ipsi,GSM7575030_SL_43_SNI_F.readcounts.csv.gz,F_SNI
+GSM7575032,SRR25182292,45,female,sni,ipsi,GSM7575032_SL_45_SNI_F.readcounts.csv.gz,F_SNI
+GSM7575042,SRR25182282,55,female,sni,ipsi,GSM7575042_SL_55_SNI_F.readcounts.csv.gz,F_SNI
+GSM7575020,SRR25182304,33,male,sham,ipsi,GSM7575020_SL_33_SHAM_M.readcounts.csv.gz,M_SHAM
+GSM7575024,SRR25182300,37,male,sham,ipsi,GSM7575024_SL_37_SHAM_M.readcounts.csv.gz,M_SHAM
+GSM7575026,SRR25182298,39,male,sham,ipsi,GSM7575026_SL_39_SHAM_M.readcounts.csv.gz,M_SHAM
+GSM7575022,SRR25182302,35,male,sni,ipsi,GSM7575022_SL_35_SNI_M.readcounts.csv.gz,M_SNI
+GSM7575036,SRR25182288,49,male,sni,ipsi,GSM7575036_SL_49_SNI_M.readcounts.csv.gz,M_SNI
+GSM7575038,SRR25182286,51,male,sni,ipsi,GSM7575038_SL_51_SNI_M.readcounts.csv.gz,M_SNI
