@@ -1,1 +1,12 @@
-test
+data:
+  metadata_path: data/metadata/samples.csv
+  counts_path: data/raw/GSE236754_RAW
+  gene_id_type: symbol
+  organism_db: org.Mm.eg.db
+  
+factors:
+  condition_levels: [Sham, SNI]
+  sex_levels: [M, F]
+
+paths:
+  processed: data/processed
