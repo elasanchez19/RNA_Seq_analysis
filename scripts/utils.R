@@ -2,6 +2,15 @@
 
 
 load_config <- function(path = "config/config.yaml") yaml::read_yaml(path)
+ensure_dir <- funtion(...) dir.create(file.path(...), recursive = TRUE,showWarnings = FALSE)
+
+pal_condition <- c(Sham = "#7f8c8d", SNI = "#d35400")
+
+theme_repo <- function(base_size = 12) {
+  theme_bw(base_size = base_size) + 
+    theme(panel.grid.minor = element_blank(),
+          strip.background = element_rect(fill = "grey92", colour = NA))
+}
 
 # ----- Counts lecture -----
 # admit metadata with column "counts_file" + folder data.counts_path with
@@ -30,10 +39,13 @@ read_count_file <- function(f){
   
   out <- data.frame(gene = d[[1]], count = counts, stringsAsFactors = FALSE)
   
+  #remove   featurecounts summary categories, not genes
+  out <- out[!grepl("^__", out$gene), ]
+  
   if (anyDuplicated(out$gene)) {
     warning(basename(f), ": duplicated gene names, counts were summed.")
     agg <- rowsum(out$count, out$gene)
-    out <- data.frame(gene = rowname(agg), count = as.numeric(agg[,1]),
+    out <- data.frame(gene = rownames(agg), count = as.numeric(agg[,1]),
                       stringsAsFactors = FALSE)
   }
   out
